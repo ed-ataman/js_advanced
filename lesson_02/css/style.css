@@ -22,6 +22,7 @@ a {
   text-transform: uppercase;
   font-weight: bold;
 }
+
 .btn-cart {
   background-color: #f16d7f;
   padding: 13px 28px 10px 23px;
@@ -32,6 +33,7 @@ a {
   cursor: pointer;
   font-size: 30px;
 }
+
 .btn-cart:hover {
   background-color: transparent;
   border-color: #f16d7f;
@@ -42,6 +44,7 @@ a {
 .logo {
   align-self: center;
 }
+
 .products {
   column-gap: 30px;
   display: grid;
@@ -50,9 +53,11 @@ a {
   padding: 40px 190px;
   justify-content: space-between;
 }
+
 p {
   margin: 0 0 5px 0;
 }
+
 .product-item {
   display: flex;
   flex-direction: column;
@@ -89,7 +94,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  color: #222;
+  color: #222222;
 }
 
 .product__price {
@@ -99,6 +104,7 @@ img {
   text-transform: uppercase;
   margin-top: 5px;
 }
+
 .buy-btn {
   background-color: #f16d7f;
   padding: 10px 20px 10px 40px;
@@ -108,6 +114,7 @@ img {
   transition: all ease-in-out 0.4s;
   cursor: pointer;
 }
+
 .buy-btn:hover {
   background-color: transparent;
   border-color: #f16d7f;
