@@ -34,9 +34,7 @@ class ProductList {
   
       for (let product of this.#goods) {
         const productObject = new ProductItem(product);
-  
         this._allProducts.push(productObject);
-  
         block.insertAdjacentHTML('beforeend', productObject.getGoodHTML());
       }
     }
