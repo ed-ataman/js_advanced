@@ -41,6 +41,7 @@ class List {
   calcSum() {
     return this.allProducts.reduce((accum, item) => (accum += item.price), 0)
   }
+  
   render() {
     const block = document.querySelector(this.container)
     for (let product of this.goods) {
