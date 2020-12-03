@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <p id="text-container">
+        Emily: 'Hey, Lima. Let’s go shopping.'
+        <br>
+        Lima: 'Hi, Em. Let’s go!'
+        <br>
+        Salesgirl: 'Good morning! Can I help you?'
+        <br>
+        Emily: 'Good morning! What is the price of this dress?'
+        <br>
+        Salesgirl: 'It costs one thousand dollars.'
+        <br>
+        Emily: 'Oh, it’s a very expensive dress.'
+        <br>
+        Lima: 'Let’s go to another store.'
+        <br>
+        Lima: 'Look at these jeans. I like them.'
+        <br>
+        Salesman: 'Can I help you?'
+        <br>
+        Lima: 'Can you tell me what the price of those jeans is?'
+        <br>
+        Salesman: 'Yes. The jeans cost three hundred dollars.'
+        <br>
+        Lima: 'Ok, I’ll take those jeans and this T-shirt. How about a nice dress for my friend?'
+        <br>
+        Salesman: 'This dress is very popular this season.'
+        <br>
+        Emily: 'Ok, I’ll take it. Thank you very much.'
+        <br>
+        Salesman: You are welcome.
+    </p>
+
+    <button id="replace">Replace</button>
+    <script>
+        let block = document.getElementById('text-container');
+        document.getElementById('replace').addEventListener('click', () => {
+            // block.textContent = block.textContent.replace(/'/g, '"');
+            block.textContent = block.textContent.replace(/\B'|'\B/g, '"');
+
+        });
+    </script>
+</body>
+
+</html>
